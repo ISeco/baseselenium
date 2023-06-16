@@ -30,5 +30,13 @@ public class GooglePage extends BasePage {
     public String firstResult() {
       return textFromElement(firstResult);
     }
+
+    public String buttonResult() {
+      return textFromElement(searchButton);
+    }
+
+    public String inputResult() {
+      return textFromElement(searchTextField);
+    }
   
   }
