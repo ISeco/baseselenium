@@ -32,8 +32,7 @@ public class GoogleSteps {
     public void validateResults() {
       //* De esta forma estamos creando un test desde Steps definitions */
       Assert.assertEquals("Descargar Java para Windows", google.firstResult());
-      Assert.assertEquals("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea", google.inputResult());
-      Assert.assertEquals("//input[@value='Buscar con Google']", google.buttonResult());
+      Assert.assertEquals("Google", google.pageTitleResult());
       // assertSame("Descargar Java para Windows", google.firstResult());
     }
 }
